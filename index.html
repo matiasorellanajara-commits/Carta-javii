@@ -5,13 +5,39 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Para usted, mi Javi ❤️</title>
 <style>
-*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;min-height:100vh;background:linear-gradient(145deg,#241322,#593046,#241322);color:#fff1f5;font-family:Georgia,serif;text-align:center;overflow-x:hidden}main{position:relative;z-index:2;max-width:680px;margin:auto;padding:35px 22px 65px}.portada{min-height:85vh;display:flex;flex-direction:column;justify-content:center;align-items:center}.fecha{color:#efb8c9;letter-spacing:2px;font-size:12px}h1{font-size:clamp(34px,8vw,52px);line-height:1.2;margin-bottom:20px}.subtitulo{font-size:22px;line-height:1.6;color:#ffd5e2}button{background:#f5c1d1;color:#482438;border:0;border-radius:35px;padding:16px 27px;font-size:16px;cursor:pointer;margin:22px 0}.carta{display:none;background:rgba(255,255,255,.08);border:1px solid rgba(255,220,230,.25);border-radius:24px;padding:28px 23px;line-height:1.9;font-size:17px;text-align:left;animation:aparecer 1.2s ease}.carta p{margin-bottom:23px}.carta h2{text-align:center;color:#ffd1df}.destacado{color:#ffd1df;font-weight:bold}.firma{text-align:right}.foto-final{display:none;margin-top:35px;animation:aparecer 1.5s ease}.foto-final img{width:100%;max-width:470px;border-radius:22px;box-shadow:0 12px 45px #160a16}.mensaje-final{font-size:21px;line-height:1.7;color:#ffd4e2;margin:30px 0}.corazon{position:fixed;bottom:-40px;pointer-events:none;opacity:.5;animation:flotar linear forwards}@keyframes flotar{to{transform:translateY(-110vh);opacity:0}}@keyframes aparecer{from{opacity:0;transform:translateY(25px)}to{opacity:1;transform:translateY(0)}}
+*{box-sizing:border-box}html{scroll-behavior:smooth}
+body{margin:0;min-height:100vh;background:linear-gradient(145deg,#241322,#593046,#241322);color:#fff1f5;font-family:Georgia,serif;text-align:center;overflow-x:hidden}
+main{position:relative;z-index:2;max-width:680px;margin:auto;padding:35px 22px 65px}
+.portada{min-height:85vh;display:flex;flex-direction:column;justify-content:center;align-items:center}
+.fecha{color:#efb8c9;letter-spacing:2px;font-size:12px}
+h1{font-size:clamp(34px,8vw,52px);line-height:1.2;margin-bottom:20px}
+.subtitulo{font-size:22px;line-height:1.6;color:#ffd5e2}
+button{background:#f5c1d1;color:#482438;border:0;border-radius:35px;padding:16px 27px;font-size:16px;cursor:pointer;margin:22px 0}
+.carta{display:none;background:rgba(255,255,255,.08);border:1px solid rgba(255,220,230,.25);border-radius:24px;padding:28px 23px;line-height:1.9;font-size:17px;text-align:left;animation:aparecer 1.2s ease}
+.carta p{margin-bottom:23px}.carta h2{text-align:center;color:#ffd1df}
+.destacado{color:#ffd1df;font-weight:bold}.firma{text-align:right}
+.foto-final{display:none;margin-top:35px;animation:aparecer 1.5s ease}
+.foto-final img{width:100%;max-width:470px;border-radius:22px;box-shadow:0 12px 45px #160a16}
+.mensaje-final{font-size:21px;line-height:1.7;color:#ffd4e2;margin:30px 0}
+.corazon{position:fixed;bottom:-40px;pointer-events:none;opacity:.5;animation:flotar linear forwards}
+@keyframes flotar{to{transform:translateY(-110vh);opacity:0}}
+@keyframes aparecer{from{opacity:0;transform:translateY(25px)}to{opacity:1;transform:translateY(0)}}
+#controlMusica{display:none;text-align:center;margin:16px auto}
+#estadoMusica{font-size:13px;color:#ffd4e2}
 </style>
 </head>
 <body>
+<audio id="cancion" src="./creo_en_ti.mp3" preload="auto" loop></audio>
 <main>
-<section class="portada" id="portada"><div class="fecha">26.09.2026 — 26.11.2026</div><div style="font-size:55px;margin-top:25px">❤️</div><h1>Para usted, mi Javi ❤️</h1><div class="subtitulo">Un mes más y sumando.<br>Te quiero mucho.</div><button onclick="abrirCarta()">Tengo algo que decirle ❤️</button></section>
-<section class="carta" id="carta"><h2>Para usted, mi Javi ❤️</h2>
+<section class="portada" id="portada">
+<div class="fecha">26.09.2026 — 26.11.2026</div>
+<div style="font-size:55px;margin-top:25px">❤️</div>
+<h1>Para usted, mi Javi ❤️</h1>
+<div class="subtitulo">Un mes más y sumando.<br>Te quiero mucho.</div>
+<button type="button" onclick="abrirCarta()">Tengo algo que decirle ❤️</button>
+</section>
+<section class="carta" id="carta">
+<h2>Para usted, mi Javi ❤️</h2>
 <p>Hoy se cumplen dos meses desde aquel 26 de septiembre en que nuestros caminos se cruzaron. Dos meses que quizás para algunos pueden parecer poco tiempo, pero que para mí han significado mucho más de lo que imaginé.</p>
 <p>Quiero que sepa lo feliz que me ha hecho conocerla, compartir momentos con usted, verla sonreír, abrazarla y sentir esa tranquilidad tan bonita que me transmite cuando estamos juntos.</p>
 <p>Sé que no todo ha sido perfecto. Hemos tenido momentos hermosos y también momentos difíciles, pero incluso en esos días he podido darme cuenta de lo importante que se ha vuelto usted para mí.</p>
@@ -19,15 +45,57 @@
 <p>No quiero que tenga dudas de lo que siento ni de mis intenciones con usted. Me encanta tal como es, con sus virtudes, sus miedos, sus locuras y cada una de esas pequeñas cosas que la hacen tan especial para mí.</p>
 <p>Quiero que sienta la seguridad de que mis sentimientos son sinceros, que no estoy aquí por un momento ni por casualidad. Estoy aquí porque quiero estar con usted, porque entre tantas personas es a usted a quien sigo eligiendo, incluso cuando las cosas no son fáciles.</p>
 <p>Gracias por llegar a mi vida, por cada momento compartido y por hacerme sentir cosas tan bonitas en tan poquito tiempo.</p>
-<p class="destacado">Felices dos meses, mi amor. ❤️</p><p class="firma">Con mucho cariño,<br>su Mati. ❤️</p>
-<div style="text-align:center"><button onclick="mostrarFoto()">Una última cosita para usted ❤️</button></div></section>
-<section class="foto-final" id="fotoFinal"><img src="./foto_javi.jpg" alt="Nuestra fotografía favorita" onerror="this.style.display='none';document.getElementById('errorFoto').style.display='block';"><p id="errorFoto" style="display:none;color:#ffd4e2">No se pudo cargar la fotografía. Compruebe que foto_javi.jpg esté junto a index.html.</p><p class="mensaje-final">De todas las personas que pude conocer, la vida me puso frente a usted. Y si volviera a empezar, volvería a elegirla. Una y mil veces. ❤️</p><div class="fecha">26.09.2026 — 26.11.2026</div></section>
-<div id="musica" style="display:none;margin-top:30px"><a href="https://www.youtube.com/results?search_query=Romeo+Santos+Usher+Promise" target="_blank" rel="noopener noreferrer" style="color:#ffd4e2">🎵 Escuchar Promise — Romeo Santos y Usher</a></div>
+<p class="destacado">Felices dos meses, mi amor. ❤️</p>
+<p class="firma">Con mucho cariño,<br>su Mati. ❤️</p>
+<div style="text-align:center"><button type="button" onclick="mostrarFoto()">Una última cosita para usted ❤️</button></div>
+</section>
+<section class="foto-final" id="fotoFinal">
+<img src="./foto_javi.jpg" alt="Nuestra fotografía favorita" onerror="this.style.display='none';document.getElementById('errorFoto').style.display='block'">
+<p id="errorFoto" style="display:none;color:#ffd4e2">No se pudo cargar la fotografía. Compruebe que foto_javi.jpg esté junto a index.html.</p>
+<p class="mensaje-final">De todas las personas que pude conocer, la vida me puso frente a usted. Y si volviera a empezar, volvería a elegirla. Una y mil veces. ❤️</p>
+<div class="fecha">26.09.2026 — 26.11.2026</div>
+</section>
+<div id="controlMusica"><button id="botonMusica" type="button" onclick="alternarMusica()">Pausar música ⏸</button><p id="estadoMusica" aria-live="polite"></p></div>
 </main>
 <script>
-function abrirCarta(){document.getElementById('portada').style.display='none';document.getElementById('carta').style.display='block';document.getElementById('musica').style.display='block';window.scrollTo({top:0,behavior:'smooth'});}
-function mostrarFoto(){const foto=document.getElementById('fotoFinal');foto.style.display='block';foto.scrollIntoView({behavior:'smooth',block:'start'});}
-function crearCorazon(){const c=document.createElement('span');c.className='corazon';c.textContent='♥';c.style.left=Math.random()*100+'vw';c.style.fontSize=(12+Math.random()*20)+'px';c.style.color='#f5a9c3';c.style.animationDuration=(6+Math.random()*6)+'s';document.body.appendChild(c);setTimeout(()=>c.remove(),12000);}setInterval(crearCorazon,900);
+const audio=document.getElementById('cancion');
+const botonMusica=document.getElementById('botonMusica');
+const estadoMusica=document.getElementById('estadoMusica');
+audio.volume=0.55;
+function actualizarControl(){
+ botonMusica.textContent=audio.paused?'Reproducir música ▶':'Pausar música ⏸';
+}
+function abrirCarta(){
+ document.getElementById('portada').style.display='none';
+ document.getElementById('carta').style.display='block';
+ document.getElementById('controlMusica').style.display='block';
+ window.scrollTo({top:0,behavior:'smooth'});
+ // Se inicia directamente desde el clic de la persona, no al cargar la página.
+ audio.play().then(()=>{estadoMusica.textContent='';actualizarControl()}).catch(()=>{
+  estadoMusica.textContent='Toque «Reproducir música» para escuchar la canción.';
+  actualizarControl();
+ });
+}
+function alternarMusica(){
+ if(audio.paused){
+  audio.play().then(()=>{estadoMusica.textContent='';actualizarControl()}).catch(()=>{
+   estadoMusica.textContent='No se pudo reproducir. Revise que creo_en_ti.mp3 esté subido junto a index.html.';
+  });
+ }else{audio.pause();actualizarControl()}
+}
+audio.addEventListener('error',()=>{estadoMusica.textContent='No se encontró la canción. Revise el nombre creo_en_ti.mp3 y su ubicación.';actualizarControl()});
+function mostrarFoto(){
+ const foto=document.getElementById('fotoFinal');
+ foto.style.display='block';
+ foto.scrollIntoView({behavior:'smooth',block:'start'});
+}
+function crearCorazon(){
+ const c=document.createElement('span');c.className='corazon';c.textContent='♥';
+ c.style.left=Math.random()*100+'vw';c.style.fontSize=(12+Math.random()*20)+'px';
+ c.style.color='#f5a9c3';c.style.animationDuration=(6+Math.random()*6)+'s';
+ document.body.appendChild(c);setTimeout(()=>c.remove(),12000);
+}
+setInterval(crearCorazon,900);
 </script>
 </body>
 </html>
